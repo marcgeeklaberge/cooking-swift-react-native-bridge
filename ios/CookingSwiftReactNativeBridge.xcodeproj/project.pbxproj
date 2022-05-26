@@ -14,6 +14,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9AD5CCEA283FEA34009A12A2 /* SwiftStarters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5CCE9283FEA34009A12A2 /* SwiftStarters.m */; };
+		9AD5CCEC283FEACD009A12A2 /* SwiftStarters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5CCEB283FEACD009A12A2 /* SwiftStarters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-CookingSwiftReactNativeBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CookingSwiftReactNativeBridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CookingSwiftReactNativeBridge/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.release.xcconfig"; path = "Target Support Files/Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests/Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AD5CCE7283FE7EB009A12A2 /* CookingSwiftReactNativeBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CookingSwiftReactNativeBridge-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AD5CCE9283FEA34009A12A2 /* SwiftStarters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftStarters.m; sourceTree = "<group>"; };
+		9AD5CCEB283FEACD009A12A2 /* SwiftStarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStarters.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +91,7 @@
 		13B07FAE1A68108700A75B9A /* CookingSwiftReactNativeBridge */ = {
 			isa = PBXGroup;
 			children = (
+				9AD5CCF1283FF34B009A12A2 /* Bridges */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -135,6 +141,48 @@
 				00E356EE1AD99517003FC87E /* CookingSwiftReactNativeBridgeTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD5CCF1283FF34B009A12A2 /* Bridges */ = {
+			isa = PBXGroup;
+			children = (
+				9AD5CCE7283FE7EB009A12A2 /* CookingSwiftReactNativeBridge-Bridging-Header.h */,
+				9AD5CCF3283FF394009A12A2 /* Starters */,
+				9AD5CCF6283FF3BF009A12A2 /* Side dishes */,
+				9AD5CCF7283FF3CF009A12A2 /* Main course */,
+				9AD5CCF8283FF3E0009A12A2 /* Dessert */,
+			);
+			path = Bridges;
+			sourceTree = "<group>";
+		};
+		9AD5CCF3283FF394009A12A2 /* Starters */ = {
+			isa = PBXGroup;
+			children = (
+				9AD5CCE9283FEA34009A12A2 /* SwiftStarters.m */,
+				9AD5CCEB283FEACD009A12A2 /* SwiftStarters.swift */,
+			);
+			path = Starters;
+			sourceTree = "<group>";
+		};
+		9AD5CCF6283FF3BF009A12A2 /* Side dishes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Side dishes";
+			sourceTree = "<group>";
+		};
+		9AD5CCF7283FF3CF009A12A2 /* Main course */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Main course";
+			sourceTree = "<group>";
+		};
+		9AD5CCF8283FF3E0009A12A2 /* Dessert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dessert;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -207,7 +255,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -410,8 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD5CCEC283FEACD009A12A2 /* SwiftStarters.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				9AD5CCEA283FEA34009A12A2 /* SwiftStarters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -457,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = CookingSwiftReactNativeBridgeTests/Info.plist;
@@ -595,6 +647,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 				);
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CookingSwiftReactNativeBridge-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -658,6 +711,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 				);
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CookingSwiftReactNativeBridge-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
