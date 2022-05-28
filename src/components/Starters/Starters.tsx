@@ -6,16 +6,16 @@ const Starters = () => {
   const orderingStarters = () => {
     console.log('React Native: Starters order sent to Swift Kitchen...')
     const appetizers = {
-      "First":"Spring Rolls",
+      "First":"Caesar Salad",
       "Second":"Tomato Bruchetta",
-      "Third":"Caesar Salad",
+      "Last":"Spring Rolls",
     }
     SwiftStarters.sendDictionary(appetizers)
   }
   const getFirstAppetizer = () => {
     console.log('React Native: Is the first appetizer ready?')
     SwiftStarters.getFirstAppetizer((appetizer: string) => {
-        console.log("Swift Cook: Yes, the", appetizer, "are being sent!")
+        console.log("Swift Cook: Yes, the", appetizer, "is being sent!")
       });
   }
   const getSecondAppetizer = () => {

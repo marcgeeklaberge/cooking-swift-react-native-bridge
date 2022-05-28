@@ -37,15 +37,16 @@ class SwiftStarters: NSObject {
                    no declined: @escaping RCTResponseErrorBlock
   ) {
     let cookAcceptedToGiveLastAppetizerForFree = arc4random_uniform(2) == 0
-    let lastAppetizer: String = self.appetizers["Second"] ?? "second appetizer"
-    if waitressWantToOfferItForFree && cookAcceptedToGiveLastAppetizerForFree {
-      accepted([lastAppetizer, "FREE"])
-    } else if waitressWantToOfferItForFree || cookAcceptedToGiveLastAppetizerForFree {
-      accepted([lastAppetizer, "50% OFF"])
-    } else {
-      let error = NSError(domain: "Sorry, we can't offer you a discount on the \(lastAppetizer), but we hope you enjoy it...", code: 888, userInfo: nil)
-      declined(error)
+    let lastAppetizer: String = self.appetizers["Last"] ?? "second appetizer"
+    DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+      if waitressWantToOfferItForFree && cookAcceptedToGiveLastAppetizerForFree {
+        accepted([lastAppetizer, "FREE"])
+      } else if waitressWantToOfferItForFree || cookAcceptedToGiveLastAppetizerForFree {
+        accepted([lastAppetizer, "50% OFF"])
+      } else {
+        let error = NSError(domain: "Sorry, we can't offer you a discount on the \(lastAppetizer), but we hope you enjoy it...", code: 888, userInfo: nil)
+        declined(error)
+      }
     }
-    
   }
 }
