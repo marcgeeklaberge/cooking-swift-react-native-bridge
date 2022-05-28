@@ -8,5 +8,7 @@
 #ifndef CookingSwiftReactNativeBridge_Bridging_Header_h
 #define CookingSwiftReactNativeBridge_Bridging_Header_h
 
+#import "React/RCTBridgeModule.h"
+#import "React/RCTLog.h"
 
 #endif /* CookingSwiftReactNativeBridge_Bridging_Header_h */

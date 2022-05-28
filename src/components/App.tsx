@@ -1,11 +1,15 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import Reservation from './Reservation/Reservation';
+import Starters from './Starters/Starters';
 
 const App = () => (
   <SafeAreaView style={styles.container}>
     <Text style={styles.title}>HOW TO COOK</Text>
     <Text style={styles.subtitle}>REACT NATIVE BRIDGE</Text>
     <Text style={styles.subtitle2}>with SWIFT?</Text>
+    <Reservation />
+    <Starters />
   </SafeAreaView>
 );
 
