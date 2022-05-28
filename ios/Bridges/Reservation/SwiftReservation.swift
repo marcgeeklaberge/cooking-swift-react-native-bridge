@@ -14,6 +14,13 @@ class SwiftReservation: NSObject {
   private var date: Date = Date()
   
   @objc
+    func constantsToExport() -> [AnyHashable : Any]! {
+      return ["restaurantName": "React Swift Native Restaurant",
+              "phoneNumber"   : "1-234-567-89XX"
+      ]
+    }
+  
+  @objc
   func makeReservation(_ numberOfPeople: Double, date: String) {
     self.numberOfPeople = Int(numberOfPeople)
     

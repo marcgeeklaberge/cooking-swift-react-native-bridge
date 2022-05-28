@@ -3,6 +3,7 @@ import {View, StyleSheet, Text, TouchableHighlight, NativeModules} from 'react-n
 
 const Reservation = () => {
   const SwiftReservation = NativeModules.SwiftReservation
+  const { restaurantName, phoneNumber } = SwiftReservation.getConstants();
   const makeReservation = () => {
     console.log('React Native: Making a reservation...')
     const numberOfPeople = 1;
@@ -12,6 +13,7 @@ const Reservation = () => {
   }
   return (
     <View style={styles.content}>
+      <Text>{restaurantName}  #{phoneNumber}</Text>
       <TouchableHighlight style={styles.button} onPress={makeReservation}>
         <Text style={styles.text}>Make A Reservation</Text>
       </TouchableHighlight>
