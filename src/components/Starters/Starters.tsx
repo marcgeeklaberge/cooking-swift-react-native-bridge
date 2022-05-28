@@ -4,32 +4,32 @@ import {View, StyleSheet, Text, TouchableHighlight, NativeModules} from 'react-n
 const Starters = () => {
   const SwiftStarters = NativeModules.SwiftStarters
   const orderingStarters = () => {
-    console.log('React Native: Starters order sent to Swift Kitchen...')
+    console.log('React Native Waitress: Starters order sent to Swift Kitchen...')
     const appetizers = {
-      "First":"Caesar Salad",
-      "Second":"Tomato Bruchetta",
-      "Last":"Spring Rolls",
+      "First":"React Salad",
+      "Second":"Native Bruchetta",
+      "Last":"Swift Rolls",
     }
-    SwiftStarters.sendDictionary(appetizers)
+    SwiftStarters.sendAppetizersOrder(appetizers)
   }
   const getFirstAppetizer = () => {
-    console.log('React Native: Is the first appetizer ready?')
+    console.log('React Native Waitress: Is the first appetizer ready?')
     SwiftStarters.getFirstAppetizer((appetizer: string) => {
         console.log("Swift Cook: Yes, the", appetizer, "is being sent!")
       });
   }
   const getSecondAppetizer = () => {
-    console.log('React Native: Client is ready to get his second appetizer.')
+    console.log('React Native Waitress: Client is ready to get his second appetizer.')
     SwiftStarters.getSecondAppetizer((error: any) => {
-      console.log("Swift Cook: ", error.domain)
+      console.log("Swift Cook:", error.domain)
     });
   }
   const getLastAppetizer = () => {
-    console.log('React Native: Can we offer a discount on last entry?')
+    console.log('React Native Waitress: Can we offer a discount on last entry?')
     SwiftStarters.getLastAppetizer(true, (appetizer: string, discount: string) => {
       console.log("Swift Cook: We are happy to offer the", appetizer, "for", discount, ":-)")
     }, (error: any) => {
-      console.log("Swift Cook: ", error.domain)
+      console.log("Swift Cook:", error.domain)
     });
   }
   return (

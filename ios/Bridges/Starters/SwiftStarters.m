@@ -10,7 +10,7 @@
 @interface
 RCT_EXTERN_MODULE(SwiftStarters, NSObject)
 
-RCT_EXTERN_METHOD(sendDictionary: (NSDictionary *)dictionary)
+RCT_EXTERN_METHOD(sendAppetizersOrder: (NSDictionary *)dictionary)
 
 RCT_EXTERN_METHOD(getFirstAppetizer: (RCTResponseSenderBlock *)callback)
 

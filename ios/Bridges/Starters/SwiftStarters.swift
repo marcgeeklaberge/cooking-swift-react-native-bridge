@@ -12,9 +12,9 @@ import UIKit
 class SwiftStarters: NSObject {
   private var appetizers: Dictionary<String, String> = [:]
   @objc
-  func sendDictionary(_ dictionary: NSDictionary) {
+  func sendAppetizersOrder(_ dictionary: NSDictionary) {
     self.appetizers = dictionary.stringDictionary
-    print("Swift cook: Just received a dictionary order!")
+    print("Swift Cook: Just received a dictionary order!")
   }
   @objc
   func getFirstAppetizer(_ callback: @escaping RCTResponseSenderBlock) {
@@ -37,7 +37,7 @@ class SwiftStarters: NSObject {
                    no declined: @escaping RCTResponseErrorBlock
   ) {
     let cookAcceptedToGiveLastAppetizerForFree = arc4random_uniform(2) == 0
-    let lastAppetizer: String = self.appetizers["Last"] ?? "second appetizer"
+    let lastAppetizer: String = self.appetizers["Last"] ?? "last appetizer"
     DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
       if waitressWantToOfferItForFree && cookAcceptedToGiveLastAppetizerForFree {
         accepted([lastAppetizer, "FREE"])

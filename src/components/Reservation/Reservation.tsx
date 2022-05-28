@@ -5,7 +5,7 @@ const Reservation = () => {
   const SwiftReservation = NativeModules.SwiftReservation
   const { restaurantName, phoneNumber } = SwiftReservation.getConstants();
   const makeReservation = () => {
-    console.log('React Native: Making a reservation...')
+    console.log('React Native Client: Making a reservation...')
     const numberOfPeople = 1;
     const currentDate = new Date()
     const reservationInOneHour = new Date(new Date(currentDate).setHours(currentDate.getHours() + 1));
