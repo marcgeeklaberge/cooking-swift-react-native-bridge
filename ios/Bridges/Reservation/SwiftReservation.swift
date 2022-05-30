@@ -14,11 +14,16 @@ class SwiftReservation: NSObject {
   private var date: Date = Date()
   
   @objc
-    func constantsToExport() -> [AnyHashable : Any]! {
-      return ["restaurantName": "React Swift Native Restaurant",
-              "phoneNumber"   : "1-234-567-89XX"
-      ]
-    }
+  func constantsToExport() -> [AnyHashable : Any]! {
+    return ["restaurantName": "React Swift Native Restaurant",
+            "phoneNumber"   : "1-234-567-89XX"
+    ]
+  }
+  
+  @objc
+  static func requiresMainQueueSetup() -> Bool {
+      return true
+  }
   
   @objc
   func makeReservation(_ numberOfPeople: Double, date: String) {

@@ -14,6 +14,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9A1F6224284567FA00F4F935 /* SwiftMainCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F6223284567FA00F4F935 /* SwiftMainCourse.swift */; };
+		9A1F62262845680700F4F935 /* SwiftMainCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F62252845680700F4F935 /* SwiftMainCourse.m */; };
+		9A1F622828456A1A00F4F935 /* Poutine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F622728456A1A00F4F935 /* Poutine.swift */; };
 		9AD5CCEA283FEA34009A12A2 /* SwiftStarters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5CCE9283FEA34009A12A2 /* SwiftStarters.m */; };
 		9AD5CCEC283FEACD009A12A2 /* SwiftStarters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5CCEB283FEACD009A12A2 /* SwiftStarters.swift */; };
 		9AD5CCFB2841160C009A12A2 /* NSDictionary+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5CCFA2841160C009A12A2 /* NSDictionary+Dictionary.swift */; };
@@ -48,6 +51,9 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-CookingSwiftReactNativeBridge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CookingSwiftReactNativeBridge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CookingSwiftReactNativeBridge/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.release.xcconfig"; path = "Target Support Files/Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests/Pods-CookingSwiftReactNativeBridge-CookingSwiftReactNativeBridgeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A1F6223284567FA00F4F935 /* SwiftMainCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMainCourse.swift; sourceTree = "<group>"; };
+		9A1F62252845680700F4F935 /* SwiftMainCourse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftMainCourse.m; sourceTree = "<group>"; };
+		9A1F622728456A1A00F4F935 /* Poutine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poutine.swift; sourceTree = "<group>"; };
 		9AD5CCE7283FE7EB009A12A2 /* CookingSwiftReactNativeBridge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CookingSwiftReactNativeBridge-Bridging-Header.h"; sourceTree = "<group>"; };
 		9AD5CCE9283FEA34009A12A2 /* SwiftStarters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftStarters.m; sourceTree = "<group>"; };
 		9AD5CCEB283FEACD009A12A2 /* SwiftStarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftStarters.swift; sourceTree = "<group>"; };
@@ -182,6 +188,9 @@
 		9AD5CCF7283FF3CF009A12A2 /* Main course */ = {
 			isa = PBXGroup;
 			children = (
+				9A1F6223284567FA00F4F935 /* SwiftMainCourse.swift */,
+				9A1F62252845680700F4F935 /* SwiftMainCourse.m */,
+				9A1F622728456A1A00F4F935 /* Poutine.swift */,
 			);
 			path = "Main course";
 			sourceTree = "<group>";
@@ -485,10 +494,13 @@
 			files = (
 				9AD5CD0028419DF1009A12A2 /* SwiftReservation.swift in Sources */,
 				9AD5CCEC283FEACD009A12A2 /* SwiftStarters.swift in Sources */,
+				9A1F622828456A1A00F4F935 /* Poutine.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				9A1F6224284567FA00F4F935 /* SwiftMainCourse.swift in Sources */,
 				9AD5CCFE284199D2009A12A2 /* SwiftReservation.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				9AD5CCEA283FEA34009A12A2 /* SwiftStarters.m in Sources */,
+				9A1F62262845680700F4F935 /* SwiftMainCourse.m in Sources */,
 				9AD5CCFB2841160C009A12A2 /* NSDictionary+Dictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,6 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {Platform, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import MainCourse from './Main Course/MainCourse';
 import Reservation from './Reservation/Reservation';
 import Starters from './Starters/Starters';
 
@@ -8,8 +9,14 @@ const App = () => (
     <Text style={styles.title}>HOW TO COOK</Text>
     <Text style={styles.subtitle}>REACT NATIVE BRIDGE</Text>
     <Text style={styles.subtitle2}>with SWIFT?</Text>
-    <Reservation />
-    <Starters />
+    {Platform.OS === 'ios' ?
+    <View style={styles.supported}>
+      <Reservation />
+      <Starters />
+      <MainCourse />
+    </View>
+    : <Text style={styles.notSupported}>This tutorial is iOS focused...</Text> }
+    
   </SafeAreaView>
 );
 
@@ -38,6 +45,16 @@ const styles = StyleSheet.create({
     fontSize: 45,
     fontWeight: 'bold',
   },
+  notSupported: {
+    paddingVertical: 50,
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 20,
+    textAlign: 'center',
+  },
+  supported: {
+    paddingVertical: 20,
+  }
 });
 
 export default App;
