@@ -27,8 +27,8 @@ export interface Poutine {
     cheeses: Cheeses;
     spicyLevel: SpicyLevel;
     extraCheeses?: Cheeses;
-    vegetables?: [Vegetables];
-    meats?: [Meats];
+    vegetables?: Vegetables[];
+    meats?: Meats[];
 }
 
 export enum PoutinesSpecialties {

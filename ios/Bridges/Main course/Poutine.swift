@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Poutine: Decodable {
+struct Poutine: Codable {
   let potatoes: String
   let sauce: String
   let cheeses: String
