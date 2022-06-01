@@ -22,12 +22,11 @@ const Dessert = () => {
         console.log('React Native Waitress: The Client wants another dessert...');
     }
     try {
+        dessertCount += 1
         const dessert = await SwiftDessert.sendDessertOrder(hisFirstDessert);
         console.log("Swift Cook:", dessert)
     } catch (error: any) {
         console.log("Swift Cook:", error.message)
-    } finally {
-        dessertCount += 1
     }
   }
 
