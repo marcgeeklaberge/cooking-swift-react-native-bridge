@@ -27,7 +27,7 @@ class SwiftStarters: NSObject {
   func getSecondAppetizer(_ callback: @escaping RCTResponseErrorBlock) {
     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
       let secondAppetizer: String = self.appetizers["Second"] ?? "second appetizer"
-      let error = NSError(domain: "Sorry, the \(secondAppetizer) is sadly no more available...", code: 777, userInfo: nil)
+      let error = NSError(domain: "Sorry, the \(secondAppetizer) is sadly no more available...", code: 86, userInfo: nil)
       callback(error)
     }
   }
@@ -44,7 +44,7 @@ class SwiftStarters: NSObject {
       } else if waitressWantToOfferItForFree || cookAcceptedToGiveLastAppetizerForFree {
         accepted([lastAppetizer, "50% OFF"])
       } else {
-        let error = NSError(domain: "Sorry, we can't offer you a discount on the \(lastAppetizer), but we hope you enjoy it...", code: 888, userInfo: nil)
+        let error = NSError(domain: "Sorry, we can't offer you a discount on the \(lastAppetizer), but we hope you enjoy it...", code: 68, userInfo: nil)
         declined(error)
       }
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Platform, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import Dessert from './Dessert/Dessert';
 import MainCourse from './Main Course/MainCourse';
 import Reservation from './Reservation/Reservation';
 import Starters from './Starters/Starters';
@@ -14,6 +15,7 @@ const App = () => (
       <Reservation />
       <Starters />
       <MainCourse />
+      <Dessert />
     </View>
     : <Text style={styles.notSupported}>This tutorial is iOS focused...</Text> }
     
